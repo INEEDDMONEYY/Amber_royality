@@ -1,3 +1,4 @@
+
 function Navbar() {
     //
 
@@ -12,8 +13,8 @@ function Navbar() {
                         <li className="nav-items">Post</li>
                         <li className="nav-items">Contact</li>
                     </ul>
-                    <div className="logo-container">
-                        <img src="" alt="" />
+                    <div className="">
+                        
                     </div>
                 </div>
             </div>
