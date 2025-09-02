@@ -9,8 +9,10 @@
 }
 
 body {
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     background: hsl(0, 1%, 36%);
     color: white;
 }
+
+/*Nav Styles*/

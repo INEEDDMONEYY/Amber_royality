@@ -1,26 +1,24 @@
+//Using logic code for a export default function className={``} are need. Use ?: alternative for (If else).
+import Logo from "../assets/Logo2.png"
 
-function Navbar() {
-    //
+export default function Navbar() {
 
-    return(
-        <>
-        {/**Import sidebar component */}
-            <div className="navbar-bg-container">
-                <div className="navbar-content-div">
-                    <h1 className="brand">Mystery Mansion</h1>
-                    <ul className="nav-items-container">
-                        <li className="nav-items">Feed</li>
-                        <li className="nav-items">Post</li>
-                        <li className="nav-items">Contact</li>
-                    </ul>
-                    <div className="">
-                        
-                    </div>
-                </div>
+return(
+    <>
+    <div className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3">
+            <div className="logo-div">
+                <img src={Logo} alt="" className="logo"/>
             </div>
-        </>
-    )
+            <div className="nav-items-bg self-center">
+                <ul className="nav-items flex gap-2 m-3 ">
+                    <button className="contact-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Contact us</button>
+                    <button className="sign-in-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Sign in</button>
+                    <button className="sign-up-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Sign up</button>
+                </ul>
+            </div>
+        </div>
+    </>
+)
 }
 
-//Export function
-export default Navbar
+//Export logic function
