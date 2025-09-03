@@ -1,22 +1,42 @@
 //Using logic code for a export default function className={``} are need. Use ?: alternative for (If else).
+import { useRef } from "react";
 import Logo from "../assets/Logo2.png"
+import { 
+    ArrowUpRight, 
+    ChevronsRightLeft, 
+    User, 
+    FileUser,
+    Mailbox 
+} 
+from "lucide-react"
+import '../css/Navbar.css'
+import { Link } from "react-router"
 
 export default function Navbar() {
+    const navRef = useRef();
+    //Arrow function
+    const showNavbar = () => {
+        navRef.current.classList.toggle("responsive_nav")
+    }
 
 return(
     <>
-    <div className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3">
-            <div className="logo-div">
-                <img src={Logo} alt="" className="logo"/>
-            </div>
-            <div className="nav-items-bg self-center">
-                <ul className="nav-items flex gap-2 m-3 ">
-                    <button className="contact-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Contact us</button>
-                    <button className="sign-in-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Sign in</button>
-                    <button className="sign-up-btn bg-pink-600 p-1 rounded-full hover:bg-pink-400">Sign up</button>
-                </ul>
-            </div>
-        </div>
+    <header className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3 items-center">
+        <img src={Logo} alt="" className="logo"/>
+        <nav className="nav-items flex" ref={navRef}>
+            <a className="nav-item" href="/#"><User /> Sign in</a>
+            <a className="nav-item" href="/#"><FileUser /> Sign up</a>
+            <a className="nav-item" href="/#"><Mailbox /> Contact</a>
+            {/**Close btn for nav on smaller screens*/}
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                <ArrowUpRight />
+            </button>
+        </nav>
+        {/**Open btn for nav on smaller screens*/}
+        <button className="nav-btn nav-open-btn" onClick={showNavbar}>
+            <ChevronsRightLeft />
+        </button>
+    </header>
     </>
 )
 }

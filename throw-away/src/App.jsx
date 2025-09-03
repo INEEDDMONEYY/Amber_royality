@@ -2,8 +2,7 @@
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
+import HomePage from './pages/HomePage'
 
 
 
@@ -13,12 +12,8 @@ export default function App() {
   return (
     <>
       <div className="page-container">
-        <header className="header w-full">
-          <Navbar />
-          
-        </header>
         <main>
-          <Home />
+          <HomePage />
         </main>
       </div>
     </>

@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
 import { SidebarItem } from "../components/Sidebar"
 import {
@@ -12,20 +13,18 @@ import {
 } from "lucide-react"
 import { Link } from "react-router"
 
-
-function Home() {
-    //
-
+export default function HelpPage(){
     return(
         <>
-        <div className="home-bg-container bg-gray-300 p-3 flex gap-3">
-            {/**Sidebar Testing, Sidebar placed in home component need to resize the sidebar div to shrink to the left when button is clicked*/}
-            <div className="navbar-test">
-                <div className="w-48">
+        <nav>
+            <Navbar />
+        </nav>
+        <main>
+            <div className="main-bg-container flex gap-3">
+                <div className="sidebar-div">
                     <Sidebar className="">
-                        <Link to="/dashboard"><SidebarItem icon={<LayoutDashboard size={20}/>} text="Dashboard" alert></SidebarItem></Link>
-                        
-                        <SidebarItem icon={<BarChart3 size={20}/>} text="Feed" active></SidebarItem>
+                        <Link to="/dashboard"><SidebarItem icon={<LayoutDashboard size={20}/>} text="Dashboard" active></SidebarItem></Link>
+                        <SidebarItem icon={<BarChart3 size={20}/>} text="Feed" alert></SidebarItem>
                         <SidebarItem icon={<Boxes size={20}/>} text="Posts"></SidebarItem>
                         <SidebarItem icon={<Package size={20}/>} text="Reviews"></SidebarItem>
                         <hr className="my-3"/>
@@ -35,17 +34,13 @@ function Home() {
                         <SidebarItem icon={<LifeBuoy />} text="Help"></SidebarItem>
                     </Sidebar>
                 </div>
-            </div>
-            <section>
-                {/**Change background to ceertain image I want to use */}
-                <div className="bg-pink-600 h-full w-full p-10 rounded-md">
-                    <h1>Home</h1>
+                <div className="bg-gray-200 w-full rounded-sm">
+                    <div className="content-container p-10">
+                        <h2 className="page-title text-pink-600"></h2>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </main>
         </>
     )
 }
-
-//Export function
-export default Home
