@@ -9,8 +9,7 @@ import {
     Mailbox 
 } 
 from "lucide-react"
-import '../css/Navbar.css'
-import { Link } from "react-router"
+//import { Link } from "react-router"
 
 export default function Navbar() {
     const navRef = useRef();

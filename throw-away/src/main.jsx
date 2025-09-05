@@ -9,6 +9,7 @@ import PostsPage from "./pages/PostsPage.jsx"
 import FeedPage from "./pages/FeedPage.jsx"
 import HomePage from "./pages/HomePage.jsx"
 import ReviewPage from './pages/ReviewPage.jsx'
+//import RewardsPage from "./pages/RewardsPage.jsx"
 
 //Always add import and add new route to browser router
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     path: "reviews",
     element: <ReviewPage/>,
   },
+  {/**{
+    path: "rewards",
+    element: <RewardsPage/>,
+  }, */}
 ]);
 
 

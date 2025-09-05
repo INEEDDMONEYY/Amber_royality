@@ -28,7 +28,7 @@ export default function DashboardPage(){
                         <Link to="/dashboard"><SidebarItem icon={<LayoutDashboard size={20}/>} text="Dashboard" active></SidebarItem></Link>
                         <Link to="/feed"><SidebarItem icon={<BarChart3 size={20}/>} text="Feed" alert></SidebarItem></Link>
                         <Link to="/posts"><SidebarItem icon={<Boxes size={20}/>} text="Posts"></SidebarItem></Link>
-                        <Link to="/reviews"><SidebarItem icon={<Package size={20}/>} text="Reviews"></SidebarItem></Link>
+                        <Link to="/reviews"><SidebarItem icon={<Package size={20}/>} text="Rewards"></SidebarItem></Link>
                         <hr className="my-3"/>
                         <SidebarItem icon={<UserCircle size={20}/>} text="Reviews" alert></SidebarItem>
                         <SidebarItem icon={<Receipt size={20}/>} text="Billings"></SidebarItem>

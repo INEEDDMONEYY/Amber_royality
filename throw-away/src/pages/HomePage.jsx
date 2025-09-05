@@ -13,8 +13,10 @@ import {
     House,
 } from "lucide-react"
 import { Link } from "react-router"
+//import Home from '../components/Home'
 
-export default function DashboardPage(){
+
+export default function HomePage(){
     return(
         <>
         <nav>
@@ -28,7 +30,7 @@ export default function DashboardPage(){
                         <Link to="/dashboard"><SidebarItem icon={<LayoutDashboard size={20}/>} text="Dashboard"></SidebarItem></Link>
                         <Link to="/feed"><SidebarItem icon={<BarChart3 size={20}/>} text="Feed" alert></SidebarItem></Link>
                         <Link to="/posts"><SidebarItem icon={<Boxes size={20}/>} text="Posts"></SidebarItem></Link>
-                        <Link to="/reviews"><SidebarItem icon={<Package size={20}/>} text="Reviews"></SidebarItem></Link>
+                        <Link to="/reviews"><SidebarItem icon={<Package size={20}/>} text="Rewards"></SidebarItem></Link>
                         <hr className="my-3"/>
                         <SidebarItem icon={<UserCircle size={20}/>} text="Reviews" alert></SidebarItem>
                         <SidebarItem icon={<Receipt size={20}/>} text="Billings"></SidebarItem>
@@ -38,7 +40,18 @@ export default function DashboardPage(){
                 </div>
                 <div className="bg-gray-200 w-full rounded-sm">
                     <div className="content-container p-10">
-                        <h2 className="page-title text-pink-600">Home</h2>
+                        <h2 className="page-title text-pink-600 text-lg">Home</h2>
+                        <div className="p-2 grid text-black gap-4">
+                            <div>
+                                <h3>Recent Posts</h3>
+                            </div>
+                            <div>
+                                <h3>Ads</h3>
+                            </div>
+                            <div>
+                                <h3>Rewards</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
