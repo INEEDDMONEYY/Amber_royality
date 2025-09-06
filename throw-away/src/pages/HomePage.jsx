@@ -39,18 +39,36 @@ export default function HomePage(){
                     </Sidebar>
                 </div>
                 <div className="bg-gray-200 w-full rounded-sm">
-                    <div className="content-container p-10">
-                        <h2 className="page-title text-pink-600 text-lg">Home</h2>
-                        <div className="p-2 grid text-black gap-4">
-                            <div>
-                                <h3>Recent Posts</h3>
+                    <div className="content-container p-2">
+                        <h2 className="page-title text-pink-600 text-lg underline">Home</h2>
+                        <div className="grid text-black gap-4 m-1">
+                            <div className="card-post-container">
+                                <h3 className="page-subtitle mb-1">Recent Posts</h3>
+                                <div className="card-display-container bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
+                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md overflow-hidden"></div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>Ads</h3>
+                            <div className="card-post-container w-auto">
+                                <h3 className="page-subtitle mb-1">Ads</h3>
+                                <div className="card-display-container p-3 bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
+                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md"></div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>Rewards</h3>
+                            <div className="card-post-container">
+                                <h3 className="page-subtitle mb-1">Rewards</h3>
+                                <div className="card-display-container p-3 bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
+                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md"></div>
+                                </div>
                             </div>
+                            <section>
+                                <div className="mt-4">
+                                    <div className="page-content-img-container h-full w-auto p-20">
+                                        <div className="page-text-container text-center text-white bg-white relative top-[100px] m-10 w-96 rounded-lg">
+                                            <h3 className="page-text-title">Some dreams are worth obtaining</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>

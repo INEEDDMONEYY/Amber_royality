@@ -24,7 +24,7 @@ export default function Sidebar({children}) {
                 </SidebarContext.Provider>
                 <div className="border-t flex p-3 account-display">
                     <img src="https://avatar.iran.liara.run/public" alt="" className={`overflow-hidden transition-all ${expanded ? "w-12" : "w-0" }`} />
-                    <div className={`flex justify-between items-center w-52 ml-3`}>
+                    <div className={`flex justify-between items-center w-24 ml-3`}>
                         <div className="leading-4">
                             <h4 className="font-semibold">Whisper</h4>
                             <span className="text-xs text-pink-600">MMansion.com</span>

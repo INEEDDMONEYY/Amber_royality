@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+ 
 
 
 @tailwind base;
@@ -47,6 +48,48 @@ header .nav-btn {
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+}
+
+main {
+    overflow: hidden;
+}
+
+/*Page styling*/
+/*Home Page*/
+.page-title {
+    font-size: 1.7rem;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+}
+
+.card-post-container {
+    margin-bottom: 25px;
+}
+
+.card-display {
+    backdrop-filter: blur(50px);
+    background: rgba(153, 0, 255, 0.137);
+    width: auto;
+}
+
+.page-content-img-container {
+    background: url('./assets/Stripper.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.page-text-container {
+    backdrop-filter: blur(50px);
+    background: rgba(147, 145, 148, 0.137);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-text-title {
+    font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 1024px) {
