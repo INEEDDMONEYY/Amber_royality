@@ -36,7 +36,7 @@ export default function PostsPage(){
                         <SidebarItem icon={<LifeBuoy />} text="Help"></SidebarItem>
                     </Sidebar>
                 </div>
-                <div className="bg-gray-200 w-full rounded-sm">
+                <div className="bg-gray-200 w-full rounded-sm bg-container">
                     <div className="content-container p-10">
                         <h2 className="page-title text-pink-600">Posts</h2>
                     </div>

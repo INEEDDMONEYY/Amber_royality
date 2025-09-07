@@ -74,10 +74,9 @@ main {
     width: auto;
 }
 
-.page-content-img-container {
+.bg-container {
     background: url('./assets/Stripper.jpg') no-repeat center center/cover;
     object-fit: cover;
-    height: 500px;
     width: 100%;
 }
 

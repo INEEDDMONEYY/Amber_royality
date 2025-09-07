@@ -14,7 +14,11 @@ import {
 } from "lucide-react"
 import { Link } from "react-router"
 
+
+
 export default function DashboardPage(){
+    
+
     return(
         <>
         <nav>
@@ -36,7 +40,7 @@ export default function DashboardPage(){
                         <SidebarItem icon={<LifeBuoy />} text="Help"></SidebarItem>
                     </Sidebar>
                 </div>
-                <div className="bg-gray-200 w-full rounded-sm">
+                <div className="bg-gray-200 w-full rounded-sm bg-container">
                     <div className="content-container p-10">
                         <h2 className="page-title text-pink-600">Dashboard</h2>
                     </div>
