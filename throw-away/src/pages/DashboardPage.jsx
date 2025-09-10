@@ -42,7 +42,7 @@ export default function DashboardPage(){
                 </div>
                 <div className="bg-gray-200 w-full rounded-sm bg-container">
                     <div className="content-container p-10">
-                        <h2 className="page-title text-pink-600">Dashboard</h2>
+                        <h2 className="page-title text-pink-600 bg-white rounded-md p-1">Dashboard</h2>
                     </div>
                 </div>
             </div>

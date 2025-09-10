@@ -80,6 +80,11 @@ main {
     width: 100%;
 }
 
+.home-bg {
+    backdrop-filter: blur(50px);
+    background: rgba(133, 131, 131, 0.103);
+}
+
 .page-text-container {
     backdrop-filter: blur(50px);
     background: rgba(147, 145, 148, 0.137);
@@ -89,6 +94,22 @@ main {
 
 .page-text-title {
     font-size: 2.5rem;
+}
+
+/*SignIn page styles*/
+.signin-bg {
+    background: url('./assets/Logo3.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+.form-bg {
+    backdrop-filter: blur(50px);
+    background: rgba(133, 131, 131, 0.103);
+}
+
+.signin-logo {
+    width: 50px;
 }
 
 @media only screen and (max-width: 1024px) {

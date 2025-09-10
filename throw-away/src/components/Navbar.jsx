@@ -9,7 +9,7 @@ import {
     Mailbox 
 } 
 from "lucide-react"
-//import { Link } from "react-router"
+import { Link } from "react-router"
 
 export default function Navbar() {
     const navRef = useRef();
@@ -23,7 +23,7 @@ return(
     <header className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3 items-center">
         <img src={Logo} alt="" className="logo"/>
         <nav className="nav-items flex" ref={navRef}>
-            <a className="nav-item" href="/#"><User /> Sign in</a>
+            <Link to="/Signin" className="text-black"><User /> Sign In</Link>
             <a className="nav-item" href="/#"><FileUser /> Sign up</a>
             <a className="nav-item" href="/#"><Mailbox /> Contact</a>
             {/**Close btn for nav on smaller screens*/}

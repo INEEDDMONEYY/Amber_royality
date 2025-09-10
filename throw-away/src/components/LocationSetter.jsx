@@ -24,10 +24,10 @@ export default function LocationDropDown() {
     //City array is functioning correctly for location dropdown
     return(
         <>
-        <div className="bg-red-300 rounded-sm">
-            <div className="dropdown-container p-1 ">
-                <label htmlFor="location">Set Location</label>
-                <select name="cities" id="" className="m-1 text-black">
+        <div className="">
+            <div className="dropdown-container">
+                <label htmlFor="location" className="text-white underline">Set Location</label>
+                <select name="cities" id="" className="m-1 text-black border-2 border-pink-400 rounded-sm">
                 {Cities.map(city => {
                     return(
                         <>

@@ -1,17 +1,21 @@
+import Form from '../components/Form'
+import SigninLogo from '../assets/Logo.png'
+
 export default function SignIn() {
     return(
         <>
-        <div className="flex flex-col signin-bg">
-            <h1 className="signin-title">Mystery Mansion</h1>
-            <h3 className="signin-subtitle">Sign In</h3>
-            <p className="text-black">Sign into your account to please, pleasure, promote your sex lifestyle!</p>
-            <form action="get">
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Password" />
-                <div className="submit-btn-container">
-                    <button type="submit">Log In</button>
+        <div className="flex flex-col signin-bg h-screen p-[200px]">
+            <div className="inline-block bg-gray-300 text-center rounded-lg w-96 self-center form-bg">
+                <div className="flex place-items-center justify-self-center">
+                    <h1 className="text-black text-[2rem] u">Mystery Mansion</h1>
+                    <img src={SigninLogo} alt="" className="signin-logo" />
                 </div>
-            </form>
+                <h3 className="text-black text-[2rem]">Sign In</h3>
+                <p className="text-black text-[1.2rem]">Sign into your account to please, pleasure, promote your sex lifestyle!</p>
+                <div className="justify-self-center">
+                    <Form />
+                </div>
+            </div>
         </div>
         </>
     )

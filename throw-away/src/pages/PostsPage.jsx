@@ -13,6 +13,7 @@ import {
     House,
 } from "lucide-react"
 import { Link } from "react-router"
+import Post from '../components/Posts'
 
 export default function PostsPage(){
     return(
@@ -38,7 +39,13 @@ export default function PostsPage(){
                 </div>
                 <div className="bg-gray-200 w-full rounded-sm bg-container">
                     <div className="content-container p-10">
-                        <h2 className="page-title text-pink-600">Posts</h2>
+                        <div className="bg-white p-10 h-auto">
+                            <h2 className="page-title text-pink-600 underline">Posts</h2>
+                            <p className="text-black">Post an ad & start making money!</p>
+                            <div className="post-form mt-5 h-auto">
+                                <Post/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

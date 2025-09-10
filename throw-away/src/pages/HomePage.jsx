@@ -65,35 +65,41 @@ export default function HomePage(){
                         <SidebarItem icon={<LifeBuoy />} text="Help"></SidebarItem>
                     </Sidebar>
                 </div>
-                <div className="bg-gray-200 w-full rounded-sm bg-container">
-                    <div className="content-container p-2">
-                        <div className="top-page-content flex justify-between">
-                            <h2 className="page-title text-pink-600 text-lg underline">Home</h2>
-                            <div className="location-dropdown-container">
+                <div className="w-full rounded-sm bg-container">
+                    <div className="home-bg bg-white m-3 p-10 align-center">
+                        <div className="flex flex-col">
+                            <div>
+                                <h2 className="page-title text-pink-600 underline">Home</h2>
+                            </div>
+                            <div>
                                 <Location />
                             </div>
-                            <p className="text-pink-600 text-[1.4rem]">{CurrentDate()}</p>
+                            <div className="mt-3">
+                                <h3 className="text-[1.2rem]">Welcome back, Jane Doe </h3>
+                                <p className="text-pink-600 text-[1rem]">{CurrentDate()}</p>
+                            </div>
                         </div>
-                        <div className="grid text-pink-600 gap-4 m-10">
-                            <div className="card-post-container">
-                                <h3 className="page-subtitle mb-1 text-pink-600 font-bold">Recent Posts</h3>
-                                <div className="card-display-container bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
-                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md overflow-hidden">
-                                        <p></p>
-                                    </div>
-                                </div>
+                        <hr className="border-1 border-pink-500"/>
+                        <div className="grid text-pink-600 gap-10 m-10">
+                            <div className="card-display-container">
+                                <h3 className="page-subtitle mb-1 text-pink-600">Top Ads</h3>
+                                <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md snap-x snap-start" id="ad-posts top-ad"></div>
+                                <hr className="border-1 border-pink-500"/>
                             </div>
-                            <div className="card-post-container w-auto">
-                                <h3 className="page-subtitle mb-1">Ads</h3>
-                                <div className="card-display-container p-3 bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
-                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md"></div>
-                                </div>
+                            <div className="card-display-container">
+                                <h3 className="page-subtitle mb-1 text-pink-600">Promotional Ads</h3>
+                                <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md" id="ad-posts promo-ad"></div>
+                                <hr className="border-1 border-pink-500"/>
                             </div>
-                            <div className="card-post-container">
-                                <h3 className="page-subtitle mb-1">Rewards</h3>
-                                <div className="card-display-container p-3 bg-gray-100 w-auto h-full rounded-sm p-3 shadow-md">
-                                    <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md"></div>
-                                </div>
+                            <div className="card-display-container">
+                                <h3 className="page-subtitle mb-1 text-pink-600">Festish Rooms</h3>
+                                <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md" id="ad-posts fetish-ad"></div>
+                                <hr className="border-1 border-pink-500"/>
+                            </div>
+                            <div className="card-display-container">
+                                <h3 className="page-subtitle mb-1 text-pink-600">Recent Posts</h3>
+                                <div className="card-display bg-white p-3 rounded-sm h-full content-center shadow-md" id="ad-posts recent-ad"></div>
+                                <hr className="border-1 border-pink-500"/>
                             </div>
                         </div>
                     </div>
