@@ -96,16 +96,17 @@ main {
     font-size: 2.5rem;
 }
 
-/*SignIn page styles*/
-.signin-bg {
-    background: url('./assets/Logo3.jpg') no-repeat center center/cover;
+/*SignIn & Signup page styles*/
+.signin-bg, .signup-bg {
+    background: url('./assets/silhouette.jpg') no-repeat center center/cover;
     object-fit: cover;
     width: 100%;
 }
 
+
 .form-bg {
     backdrop-filter: blur(50px);
-    background: rgba(133, 131, 131, 0.103);
+    background: rgba(247, 244, 244, 0.5);
 }
 
 .signin-logo {

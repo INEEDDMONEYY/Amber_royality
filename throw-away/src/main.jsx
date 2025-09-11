@@ -10,6 +10,8 @@ import FeedPage from "./pages/FeedPage.jsx"
 import HomePage from "./pages/HomePage.jsx"
 import ReviewPage from './pages/ReviewPage.jsx'
 import Signin from './pages/SignIn.jsx'
+import Signup from './pages/SignUp.jsx'
+import ForgotPassword from './pages/ForgotPasswordPage.jsx'
 //import RewardsPage from "./pages/RewardsPage.jsx"
 
 //Always add import and add new route to browser router
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
   {
     path: "signin",
     element: <Signin/>,
+  },
+  {
+    path: "signup",
+    element: <Signup/>,
+  },
+  {
+    path: "forgotpassword",
+    element: <ForgotPassword/>,
   },
   {/**{
     path: "rewards",

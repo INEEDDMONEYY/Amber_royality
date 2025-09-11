@@ -22,10 +22,9 @@ return(
     <>
     <header className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3 items-center">
         <img src={Logo} alt="" className="logo"/>
-        <nav className="nav-items flex" ref={navRef}>
+        <nav className="nav-items flex gap-5" ref={navRef}>
             <Link to="/Signin" className="text-black"><User /> Sign In</Link>
-            <a className="nav-item" href="/#"><FileUser /> Sign up</a>
-            <a className="nav-item" href="/#"><Mailbox /> Contact</a>
+            <Link to="/signup" className="text-black"><FileUser />Sign Up</Link>
             {/**Close btn for nav on smaller screens*/}
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <ArrowUpRight />

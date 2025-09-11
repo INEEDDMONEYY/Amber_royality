@@ -4,15 +4,16 @@ export default function Form() {
     return(
         <>
         <form action="" method="post" className="flex flex-col w-96">
-            <input type="text" name="email" placeholder="Email" className="border-2 border-pink-600 m-2 px-1 text-[1.5rem]" id="email"/>
-            <input type="text" name="password" placeholder="Password" className="border-2 border-pink-600 m-2 px-1 text-[1.5rem]" id="password"/>
+            <input type="text" name="email" placeholder="Enter your username" className="border-2 border-pink-600 m-2 px-1 text-[1rem] text-black rounded-lg" id="username"/>
+            <input type="text" name="password" placeholder="Enter your password" className="border-2 border-pink-600 m-2 px-1 text-[1rem] text-black rounded-lg" id="password"/>
             <div>
-                <button name="submit-btn" type="submit" className="border-2 border-white m-1 px-1 text-black text-[1.3rem] rounded-md">Sign In</button>
+                <button name="submit-btn" type="submit" className="border-2 border-white m-1 px-1 text-black text-[1.3rem] rounded-md" id="sign-in-btn">Sign In</button>
             </div>
             <div>
                 {/**Import link from react router & link sign up to it's link */}
-                <h3 className="text-black text-[1rem] underline">Don't have an account yet? Sign Up</h3>
-                <Link to="/home"><p className="underline text-black">Return home</p></Link>
+                <h3 className="text-black text-[1rem] underline">Don't have an account yet? <Link to="/signup" className="text-pink-700">Sign Up</Link></h3>
+                <Link to="/forgotpassword">Forgot password ?</Link>
+                <Link to="/home"><p className="underline text-pink-700">Return home</p></Link>
             </div>
         </form>
         </>
