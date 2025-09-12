@@ -5,7 +5,11 @@ import post from './data/posts.js'
 import dotenv from 'dotenv'
 const app = require('express');
 const port = process.env.PORT || 4000;
+//Connecting MongoDB not working, Error: 'TypeError: Cannot read properties of undefined (reading 'setHeader')'. 
+// Problem is I'm mixing both ES module(Import) & CommonJS(Require).
+//const connectDB = require('./config/db.js');
 dotenv.config();
+//connectDB();
 //Server set up, implement error handlers
 ///This message is logged to screen
 app.get('/', (req, res) => {

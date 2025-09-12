@@ -20,11 +20,11 @@ export default function Navbar() {
 
 return(
     <>
-    <header className="navbar-bg-container bg-pink-200 flex justify-between w-full mb-3 items-center">
+    <header className="navbar-bg-container bg-black flex justify-between w-full mb-3 items-center">
         <img src={Logo} alt="" className="logo"/>
-        <nav className="nav-items flex gap-5" ref={navRef}>
-            <Link to="/Signin" className="text-black"><User /> Sign In</Link>
-            <Link to="/signup" className="text-black"><FileUser />Sign Up</Link>
+        <nav className="nav-items flex gap-5 text-white" ref={navRef}>
+            <Link to="/Signin"><User /> Sign In</Link>
+            <Link to="/signup"><FileUser />Sign Up</Link>
             {/**Close btn for nav on smaller screens*/}
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <ArrowUpRight />
